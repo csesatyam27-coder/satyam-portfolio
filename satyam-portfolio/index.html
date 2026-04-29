@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satyam Developer | Portfolio</title>
+  <meta
+    name="description"
+    content="Professional portfolio website for Satyam Developer featuring services, projects, skills, and contact details."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true">
+    <span class="scroll-progress-bar" id="scrollProgressBar"></span>
+  </div>
+  <div class="page-shell">
+    <header class="header" id="top">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="Satyam Developer home">
+          <img src="assets/logo.png" alt="Satyam Developer logo" class="brand-logo">
+          <div class="brand-copy">
+            <span class="brand-title">Satyam Developer</span>
+            <span class="brand-subtitle">Full Stack Portfolio</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+          <a href="https://wa.me/917668646014?text=Hello%20Satyam%2C%20I%20want%20to%20discuss%20a%20project." class="nav-cta" target="_blank" rel="noreferrer">Let's Talk</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Creative Developer • Problem Solver • Builder</p>
+            <h1>Building modern digital experiences with clean code and sharp design.</h1>
+            <p class="hero-text">
+              I create responsive websites, business portfolios, and user-focused web apps
+              that help brands look professional and perform smoothly on every screen.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">View My Work</a>
+              <a class="button button-secondary" href="#contact">Hire Me</a>
+              <a
+                class="button button-whatsapp"
+                href="https://wa.me/917668646014?text=Hello%20Satyam%2C%20I%20want%20to%20discuss%20a%20project."
+                target="_blank"
+                rel="noreferrer"
+              >Chat on WhatsApp</a>
+            </div>
+            <div class="hero-metrics">
+              <article>
+                <strong class="metric-value" data-target="10" data-suffix="+">0</strong>
+                <span>Projects Delivered</span>
+              </article>
+              <article>
+                <strong class="metric-value" data-target="100" data-suffix="%">0</strong>
+                <span>Responsive Focus</span>
+              </article>
+              <article>
+                <strong class="metric-value" data-target="24" data-suffix="/7">0</strong>
+                <span>Commitment to Quality</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-card reveal">
+            <div class="hero-card-top">
+              <img src="assets/logo.png" alt="Satyam Developer symbol" class="hero-logo">
+              <div>
+                <p class="mini-title">Available for freelance and portfolio projects</p>
+                <h2>Professional web presence that feels premium.</h2>
+              </div>
+            </div>
+            <div class="hero-stack">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Responsive UI</span>
+              <span>Performance</span>
+              <span>UI Polish</span>
+            </div>
+            <div class="hero-highlight">
+              <p>What I focus on</p>
+              <ul>
+                <li>Fast-loading interfaces</li>
+                <li>Mobile-first responsive layouts</li>
+                <li>Clean visual branding</li>
+                <li>Clear conversion paths for clients</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container split-grid">
+          <div class="section-copy reveal">
+            <p class="eyebrow">About Me</p>
+            <h2>A developer focused on trust, clarity, and results.</h2>
+            <p>
+              I help businesses and personal brands launch websites that look professional,
+              communicate clearly, and work well across desktop, tablet, and mobile devices.
+            </p>
+            <p>
+              My approach combines practical frontend development with modern visual design,
+              so every portfolio or landing page feels polished and easy to use.
+            </p>
+          </div>
+          <div class="feature-panel reveal">
+            <article>
+              <span>01</span>
+              <h3>Frontend Development</h3>
+              <p>Crafting interactive interfaces that feel smooth and reliable.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Responsive Design</h3>
+              <p>Layouts tuned for mobile phones, tablets, laptops, and large displays.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Brand Presentation</h3>
+              <p>Strong visual structure that helps visitors trust your work immediately.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Core Skills</p>
+            <h2>Tools and strengths I bring to every project.</h2>
+          </div>
+          <div class="skills-toolbar reveal">
+            <label class="search-field" for="skillSearch">
+              <span>Search skills</span>
+              <input type="search" id="skillSearch" placeholder="Type HTML, design, client, responsive...">
+            </label>
+            <p class="skills-result" id="skillsResult">Showing all strengths</p>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card reveal" data-skill="frontend html css javascript responsive modern ui structure">
+              <h3>Frontend</h3>
+              <p>HTML, CSS, JavaScript, responsive layouts, modern UI structure.</p>
+            </article>
+            <article class="skill-card reveal" data-skill="design spacing typography color systems visual hierarchy ui">
+              <h3>Design Sense</h3>
+              <p>Clean spacing, strong typography, color systems, and visual hierarchy.</p>
+            </article>
+            <article class="skill-card reveal" data-skill="optimization performance usability readability speed clean build">
+              <h3>Optimization</h3>
+              <p>Performance-conscious builds with usability and readability in mind.</p>
+            </article>
+            <article class="skill-card reveal" data-skill="client business presentation conversion communication trust">
+              <h3>Client Focus</h3>
+              <p>Business-oriented presentation that supports credibility and conversion.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-accent" id="projects">
+        <div class="container">
+          <div class="section-heading reveal projects-heading">
+            <div>
+              <p class="eyebrow">Featured Projects</p>
+              <h2>Selected work categories for modern clients and brands.</h2>
+            </div>
+            <div class="project-filters" role="tablist" aria-label="Project filters">
+              <button class="filter-button is-active" data-filter="all" type="button">All</button>
+              <button class="filter-button" data-filter="portfolio" type="button">Portfolio</button>
+              <button class="filter-button" data-filter="business" type="button">Business</button>
+              <button class="filter-button" data-filter="landing" type="button">Landing</button>
+            </div>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal" data-category="portfolio">
+              <span class="tag">Portfolio</span>
+              <h3>Developer Identity Site</h3>
+              <p>A sleek personal brand website with hero messaging, projects, and lead capture.</p>
+              <div class="project-meta">
+                <span>Responsive</span>
+                <span>Professional UI</span>
+              </div>
+            </article>
+            <article class="project-card reveal" data-category="business">
+              <span class="tag">Business</span>
+              <h3>Agency Showcase</h3>
+              <p>A service-led business website designed to build trust and increase inquiries.</p>
+              <div class="project-meta">
+                <span>Conversion Ready</span>
+                <span>Service Sections</span>
+              </div>
+            </article>
+            <article class="project-card reveal" data-category="landing">
+              <span class="tag">Landing</span>
+              <h3>Product Launch Page</h3>
+              <p>A focused landing page with highlights, benefits, and strong call-to-action flow.</p>
+              <div class="project-meta">
+                <span>Fast Scroll</span>
+                <span>CTA Driven</span>
+              </div>
+            </article>
+            <article class="project-card reveal" data-category="business">
+              <span class="tag">Business</span>
+              <h3>Local Brand Presence</h3>
+              <p>A polished business profile site for small brands wanting a premium online presence.</p>
+              <div class="project-meta">
+                <span>Modern Layout</span>
+                <span>Easy Navigation</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Services</p>
+            <h2>What I can build for you.</h2>
+          </div>
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <h3>Portfolio Websites</h3>
+              <p>Professional personal websites for developers, freelancers, and creators.</p>
+            </article>
+            <article class="service-card reveal">
+              <h3>Business Websites</h3>
+              <p>Clean company websites that present services clearly and confidently.</p>
+            </article>
+            <article class="service-card reveal">
+              <h3>Landing Pages</h3>
+              <p>Focused marketing pages built to showcase an offer and increase action.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container contact-grid">
+          <div class="section-copy reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Let's build a website that makes your brand stand out.</h2>
+            <p>
+              Use the form to send a project inquiry quickly. It validates the fields, tries the
+              instant contact flow first, and falls back to email when needed.
+            </p>
+            <div class="contact-points">
+              <span>Professional presentation</span>
+              <span>Responsive implementation</span>
+              <span>Clean and maintainable code</span>
+            </div>
+            <div class="contact-links">
+              <a class="social-chip social-gmail" href="mailto:csesatyam27@gmail.com">
+                <span class="social-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 6.5h16a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 1 20 17.5H4A1.5 1.5 0 0 1 2.5 16V8A1.5 1.5 0 0 1 4 6.5Z" stroke="currentColor" stroke-width="1.8"/>
+                    <path d="m4 8 8 5 8-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span>csesatyam27@gmail.com</span>
+              </a>
+              <a class="social-chip social-github" href="https://github.com/csesatyam27-coder" target="_blank" rel="noreferrer">
+                <span class="social-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.75a8.25 8.25 0 0 0-2.61 16.08c.41.08.56-.18.56-.4v-1.4c-2.27.5-2.75-.96-2.75-.96-.37-.94-.91-1.19-.91-1.19-.74-.5.06-.49.06-.49.82.06 1.25.84 1.25.84.73 1.25 1.92.89 2.39.68.07-.53.29-.89.52-1.09-1.81-.2-3.71-.91-3.71-4.03 0-.89.32-1.62.84-2.19-.08-.2-.36-1.02.08-2.12 0 0 .69-.22 2.27.84a7.87 7.87 0 0 1 4.13 0c1.58-1.06 2.27-.84 2.27-.84.44 1.1.16 1.92.08 2.12.52.57.84 1.3.84 2.19 0 3.13-1.9 3.83-3.72 4.03.3.25.56.74.56 1.5v2.23c0 .22.15.48.57.4A8.25 8.25 0 0 0 12 3.75Z" fill="currentColor"/>
+                  </svg>
+                </span>
+                <span>GitHub Profile</span>
+              </a>
+              <a class="social-chip social-instagram" href="https://www.instagram.com/build_with_satyam" target="_blank" rel="noreferrer">
+                <span class="social-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <rect x="3.25" y="3.25" width="17.5" height="17.5" rx="5" stroke="currentColor" stroke-width="1.8"/>
+                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/>
+                    <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/>
+                  </svg>
+                </span>
+                <span>@build_with_satyam</span>
+              </a>
+              <a class="social-chip social-whatsapp" href="https://wa.me/917668646014?text=Hello%20Satyam%2C%20I%20want%20to%20discuss%20a%20project." target="_blank" rel="noreferrer">
+                <span class="social-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M12 4a8 8 0 0 0-6.92 12.02L4 20l4.13-1.05A8 8 0 1 0 12 4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                    <path d="M9.3 10.1c.18-.4.37-.41.55-.42h.47c.14 0 .37.05.57.48.19.42.65 1.47.7 1.57.06.1.1.23.02.36-.08.13-.12.21-.24.33-.12.12-.25.27-.35.37-.12.12-.24.26-.1.5.13.24.6.98 1.3 1.58.88.76 1.62 1 1.86 1.12.25.11.39.1.54-.06.15-.17.62-.72.78-.97.16-.25.33-.2.55-.12.23.08 1.42.67 1.67.79.25.12.42.18.48.28.06.11.06.6-.14 1.18-.2.58-1.14 1.11-1.56 1.17-.41.06-.94.09-1.52-.1-.35-.11-.8-.26-1.37-.51-2.4-1.04-3.95-3.52-4.07-3.69-.12-.17-.97-1.29-.97-2.47 0-1.17.61-1.74.82-1.98Z" fill="currentColor"/>
+                  </svg>
+                </span>
+                <span>+91 76686 46014</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <label>
+              <span>Name</span>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+            </label>
+            <button class="button button-primary form-submit" type="submit">Send Project Inquiry</button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-wrap">
+        <div>
+          <strong>Satyam Developer</strong>
+          <p>Responsive portfolio website crafted for a strong first impression.</p>
+        </div>
+        <p class="footer-copy">© 2026 Satyam Developer. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast" aria-live="polite" aria-atomic="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
